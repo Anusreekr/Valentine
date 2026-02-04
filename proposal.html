@@ -93,12 +93,28 @@
           transform: scale(1);
         }
       }
+      .yes-gallery {
+  display: none;                 /* hidden until YES */
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.yes-gallery img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;             /* keeps image neat */
+  border-radius: 15px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.35);
+}
+
     </style>
   </head>
   <body>
     <div class="card">
       <h1>Will you be mine forever? 💍❤️</h1>
-      <h6>You can't touch NO🫣</h6>
+      <h6>You can't touch NO 🫣</h6>
       <button class="yes" onclick="yes()">YES 😍</button>
       <button class="no" onmouseover="moveNo()">NO 🙈</button>
       <p id="result"></p>
@@ -111,14 +127,15 @@
     </div>
 
     <script>
-      function yes() {
-        document.getElementById("result").innerHTML =
-          "You just made me the happiest person ever 💖💍";
-          "I LOVE YOU"❤️;
-        document.getElementById("yesGallery").style.display = "grid";
+    function yes() {
+  document.getElementById("result").innerHTML =
+    "You just made me the happiest person ever 💖💍<br><br><strong>I LOVE YOU ❤️</strong>";
 
-        startHearts();
-      }
+  document.getElementById("yesGallery").style.display = "grid";
+
+  startHearts();
+}
+
 
       function moveNo() {
         const btn = document.querySelector(".no");
@@ -139,4 +156,5 @@
     </script>
   </body>
 </html>
+
 
