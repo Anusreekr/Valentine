@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>For My Love ❤️</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        background: linear-gradient(to right, #ff9a9e, #fad0c4);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Segoe UI", sans-serif;
+        color: #fff;
+        text-align: center;
+      }
+
+      .card {
+        background: rgba(255, 255, 255, 0.15);
+        padding: 40px;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        max-width: 500px;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      button {
+        margin-top: 20px;
+        padding: 12px 25px;
+        border: none;
+        border-radius: 25px;
+        background: #ff4b5c;
+        color: white;
+        font-size: 1rem;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h1>Happy Valentine’s Day ❤️</h1>
+      <p>
+        To my favorite person,<br /><br />
+        You make my world brighter just by being in it.
+      </p>
+      <button onclick="goToLove()">Click me 💖</button>
+      <p id="surprise"></p>
+    </div>
+
+    <script>
+      function goToLove() {
+        window.location.href = "love.html";
+      }
+    </script>
+  </body>
+</html>
